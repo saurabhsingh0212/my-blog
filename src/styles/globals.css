@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* global */
+h1,
+h2,
+h3 {
+  @apply font-bold;
+}
+
+img {
+  @apply rounded-md;
+}
+
+a:not(.tag) {
+  @apply text-sm text-gray-700 hover:text-blue-500 transition-colors duration-300 ease-out;
+}
+
+figure {
+  @apply shadow-md my-3 md:my-5;
+}
+
+footer {
+  @apply bg-slate-200;
+}
+
+footer div {
+  @apply font-monts p-5 mx-auto md:w-3/4 xl:w-7/12 2xl:w-1/2 flex gap-3 justify-between;
+}
+
+footer ul {
+  @apply flex items-center gap-3;
+}
+
+/* Home page */
+.blog-page-container {
+  min-height: calc(100vh - 60px);
+  @apply p-5 md:p-10 mx-auto md:w-3/4 xl:w-5/12 2xl:w-1/3;
+}
+
+.home-title {
+  @apply text-2xl md:text-4xl font-bold mb-5 font-monts;
+}
+
+.blog-post-list {
+  @apply flex flex-col items-stretch border-t border-gray-300;
+}
+
+.blog-post-list li {
+  @apply py-3 px-1 border-b border-gray-300;
+}
+
+.blog-post-list .blog-title {
+  @apply mb-2 text-lg md:text-xl font-semibold font-monts;
+}
+
+.blog-post-list .description {
+  @apply mb-5 text-gray-700 font-raleway;
+}
+
+.blog-post-list .tags {
+  @apply mb-2 font-raleway;
+}
+
+.tags span {
+  @apply py-1 px-2 bg-cyan-200 text-sm rounded-md;
+}
+
+.blog-post-list .date-link-container {
+  @apply flex justify-between items-end font-raleway;
+}
+
+.date-link-container p {
+  @apply text-sm text-gray-500 font-light;
+}
+
+.read-more-button {
+  @apply flex items-center gap-1;
+}
+
+/* Blog page style */
+.blog-wrapper {
+  @apply mx-auto mb-3 md:w-3/4 xl:w-7/12 2xl:w-1/2 py-5 md:py-10 px-3 md:px-7 bg-white;
+}
+
+.nav-row {
+  @apply flex justify-between items-end mb-3;
+}
+.nav-row nav {
+  @apply flex;
+}
+
+.blog-details {
+  @apply mb-7;
+}
+
+.blog-details h1 {
+  @apply font-monts text-3xl lg:text-5xl;
+}
+
+.blog-details .description {
+  @apply font-raleway text-gray-500 my-2 md:my-4;
+}
+
+.blog-details .author-date-container {
+  @apply font-monts flex items-center gap-2 text-sm;
+}
+
+.author-date-container span:last-child {
+  @apply text-gray-500;
+}
+
+.block-content {
+  @apply font-monts flex flex-col items-stretch gap-5 lg:text-lg;
+}
+
+.block-content p {
+  @apply md:leading-7;
+}
+
+.blog-heading-1 {
+  @apply font-monts text-2xl md:text-4xl;
+}
+
+.blog-heading-2 {
+  @apply text-xl md:text-3xl mt-3;
+}
+
+.blog-heading-3 {
+  @apply text-lg md:text-2xl mt-2;
+}
+
+.code-block {
+  @apply py-3 px-4 bg-slate-100 overflow-x-auto;
+}
+
+a.resource-link {
+  @apply text-balance lg:text-lg underline;
+}
